@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Weather App</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+        <img src="img/logo.png" alt="logo">
+        <div>
+          <h1>Weather</h1>
+          <p class="text-white-50">tagline goes here</p>
+        </div>
+      </a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ms-auto align-items-center gap-1 mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="home">
+    <div class="container ">
+      <div class="d-flex justify-content-center text-white">
+        <h2 id="timeNow"></h2>
+      </div>
+      <div class="inputs">
+        <input id="search" type="text" class="input1 my-3 m-auto " placeholder="Search By City">
+        <input type="submit" value="Find" class="input2">
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-4 p-0 " id="today">
+          <div class="box rounded-0 m-0 m-auto d-flex flex-column align-items-center">
+            <div class="header w-100 p-2 mb-4 d-flex justify-content-between">
+              <p class="text-white-50" id="day"></p>
+              <p id="date"></p>
+            </div>
+            <h5 id="city" class="ps-3 text-white-50">Cairo</h5>
+            <div class="temp ps-3 d-flex align-items-center">
+              <p id="degree"></p>
+              <span>o</span>
+              <p>C</p>
+            </div>
+            <img id="icon" src="" alt="">
+            <p id="condition"></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 p-0 " id="next-day" >
+          <div class="box">
+            <div class="header w-100 p-2 mb-4 text-center">
+              <p class="text-white-50" id="tomorrow"></p>
+            </div>
+            <div id="nextDay">
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 p-0 " id="after-next-day">
+          <div class="box">
+            <div class="header w-100 p-2 mb-4 text-center">
+              <p class="text-white-50" id="afterTomorrow"></p>
+            </div>
+            <div id="afterNextDay">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="social-media d-flex justify-content-center">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/dev.mohamedadel/">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/dev_mohamedadel">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/mohamed-adel-17">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/mohamedadel17/">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>Copyrights 2024 &copy All Rights Reserved</p>
+      <p>Designed by  <a href="">Mohamed Adel</a></p>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="./js/all.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

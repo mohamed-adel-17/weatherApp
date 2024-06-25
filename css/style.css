@@ -1,0 +1,274 @@
+:root {
+  --main-color: #009ad8;
+}
+
+body {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  background-color: #1e202b;
+}
+
+nav {
+  background-color: #1e202b;
+}
+nav .navbar-brand h1 {
+  font-weight: 700;
+  font-size: 16px;
+}
+nav .navbar-brand p {
+  font-size: 10px;
+  margin: 0;
+}
+nav * {
+  color: #fff !important;
+}
+nav .nav-link {
+  font-weight: 400;
+  padding: 5px 25px !important;
+}
+nav .active,
+nav .nav-link:hover {
+  color: var(--main-color) !important;
+  border: 2px solid var(--main-color);
+  border-radius: 30px;
+  padding: 3px 23px !important;
+}
+
+.navbar-toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============= home ============ */
+.home {
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#timeNow {
+  margin: 25px 0;
+  background-color: var(--main-color);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px var(--main-color);
+}
+
+.inputs {
+  position: relative;
+}
+.inputs .input1 {
+  background-color: #1e202bd2;
+  width: 100%;
+  padding: 12px 15px;
+  border: var(--main-color) 1px solid;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+.inputs .input2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  background-color: var(--main-color);
+  padding: 10px 35px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.box .header {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.box .header p {
+  margin: 0;
+}
+#today,
+#after-next-day {
+  background-color: #323544b6;
+}
+.col-lg-4 * {
+  color: #fff;
+}
+#next-day {
+  background-color: #262936ee;
+}
+
+#degree {
+  font-size: 90px;
+  font-weight: 700;
+}
+.temp span {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 5px;
+  position: relative;
+  top: -40px;
+}
+.temp p:last-child {
+  font-size: 90px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+#icon {
+  width: 128px;
+}
+
+#condition {
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+.condition {
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+#nextDay,
+#afterNextDay {
+  text-align: center;
+  padding-top: 30px;
+}
+#nextDay h4,
+#afterNextDay h4 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#nextDay .temp-2,
+#afterNextDay .temp-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nextDay h4::after,
+#afterNextDay h4::after {
+  content: "o";
+  position: relative;
+  top: -20px;
+  font-size: 30px;
+}
+#nextDay .temp-2 span,
+#afterNextDay .temp-2 span {
+  font-size: 45px;
+  padding-left: 8px;
+  color: var(--main-color);
+}
+
+#nextDay #icon1,
+#afterNextDay #icon2 {
+  width: 80px;
+}
+
+
+footer .social-media ul {
+  list-style-type: none;
+  width: 18%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+footer .social-media ul li a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 20px;
+  padding: 10px;
+  transition: all .5s;
+}
+footer .social-media ul li a:hover {
+  color: aqua;
+  transform: scale(1.2);
+}
+
+footer .copyright{
+  text-align: center;
+  color: #fff;
+}
+footer .copyright a{
+  text-decoration: none;
+  color: var(--main-color);
+}
+footer .copyright a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 30px !important;
+  }
+  #condition,
+  .condition {
+    font-size: 1.5rem;
+    padding-left: 20px;
+  }
+  #degree {
+    font-size: 90px;
+    font-weight: 700;
+  }
+  .temp span {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0 5px;
+    position: relative;
+    top: -40px;
+  }
+  .temp p:last-child {
+    font-size: 90px;
+    font-weight: 700;
+  }
+}
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    padding: 0 30px !important;
+  }
+  #condition,
+  .condition {
+    font-size: 1.5rem;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  .container {
+    padding: 0 !important;
+  }
+  #degree {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .temp span {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 5px;
+    position: relative;
+    top: -30px;
+  }
+  .temp p:last-child {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--main-color);
+  }
+  #condition,
+  .condition {
+    font-size: 1.5rem;
+  }
+  #icon {
+    width: 80px;
+  }
+}
+@media (min-width: 1025px) {
+  .container {
+    padding: 10px 0 !important;
+  }
+}
+
